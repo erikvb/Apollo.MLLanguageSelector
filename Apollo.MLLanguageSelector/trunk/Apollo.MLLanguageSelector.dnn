@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dotnetnuke version="3.0" type="Module">
+	<folders>
+		<folder>
+			<name>MLLanguageSelector</name>
+            <friendlyname>MLLanguageSelector</friendlyname>
+            <foldername>MLLanguageSelector</foldername>
+            <modulename>MLLanguageSelector</modulename>
+            <description>This version of MLLanguageSelector is not compatible with DNN 3.x or 4.x</description>
+			<version>05.00.00</version>
+            <compatibleversions>(05.0[6-9]{1}).[0-9]{2}</compatibleversions>
+            <resourcefile></resourcefile>
+		</folder>
+	</folders>
+</dotnetnuke>

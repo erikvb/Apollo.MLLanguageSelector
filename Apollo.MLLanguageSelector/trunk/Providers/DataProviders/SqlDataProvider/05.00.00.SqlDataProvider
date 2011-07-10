@@ -1,0 +1,64 @@
+/* copyright (c) 2005 by Erik van Ballegoij ( erik@apollo-software.nl ) ( http://www.apollo-software.nl )*/
+/* This sql statement makes sure that the module is also installed as a skinobject */
+
+DELETE FROM {databaseOwner}{objectQualifier}ModuleControls 
+WHERE ControlKey = 'MLLanguageSelector'
+
+GO
+
+
+        DECLARE @PackageId INT
+
+		IF EXISTS (select * from {databaseOwner}[{objectQualifier}Packages] where Name = 'Apollo.MLLANGUAGESELECTOR')
+		BEGIN
+			SELECT @PackageId = PackageId from {databaseOwner}[{objectQualifier}Packages] where Name = 'Apollo.MLLANGUAGESELECTOR'
+
+			UPDATE {databaseOwner}[{objectQualifier}Packages] 
+			SET Version = N'5.0.0',
+			    License = N'See for complete license text: http://mllanguageselector.codeplex.com/license'
+		END
+		ELSE 
+		BEGIN
+        INSERT  INTO {databaseOwner}[{objectQualifier}Packages]
+                (
+                  [Name],
+                  [FriendlyName],
+                  [Description],
+                  [PackageType],
+                  [Version],
+                  [License]
+                )
+        VALUES  (
+                  N'Apollo.MLLANGUAGESELECTOR',
+                  N'MLLANGUAGESELECTOR SkinObject',
+                  N'This SkinObject is part of the Apollo MLLANGUAGESELECTOR Module',
+                  N'SkinObject',
+                  N'3.0.0',
+                  N'See for complete license text: http://mllanguageselector.codeplex.com/license'
+                )
+                
+        SELECT  @PackageId = SCOPE_IDENTITY()
+
+        INSERT  INTO {databaseOwner}[{objectQualifier}SkinControls]
+                (
+                  [PackageID],
+                  [ControlKey],
+                  [ControlSrc],
+                  [IconFile],
+                  [HelpUrl],
+                  [SupportsPartialRendering]
+                )
+        VALUES  (
+                  @PackageId,
+                  N'MLLANGUAGESELECTOR',
+                  N'DesktopModules/MLLanguageSelector/MLLanguageSelector.ascx',
+                  NULL,
+                  NULL,
+                  0
+                )
+        END
+   
+
+
+GO
+

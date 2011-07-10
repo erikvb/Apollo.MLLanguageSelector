@@ -1,0 +1,14 @@
+/* copyright (c) 2005 by Erik van Ballegoij ( erik@apollo-software.nl ) ( http://www.apollo-software.nl )*/
+/* This sql statement deletes the skinobject reference from the database */
+
+DELETE FROM {databaseOwner}{objectQualifier}ModuleControls 
+WHERE ControlKey = 'MLLanguageSelector'
+GO
+
+DELETE FROM {databaseOwner}[{objectQualifier}SkinControls]
+WHERE ControlKey = 'MLLanguageSelector'
+
+GO
+
+DELETE FROM {databaseOwner}[{objectQualifier}Packages]
+WHERE Name = 'Apollo.MLLANGUAGESELECTOR'

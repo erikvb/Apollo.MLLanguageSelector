@@ -1,0 +1,98 @@
+﻿<dotnetnuke type="Package" version="5.0">
+    <packages>
+        <package name="MLLanguageSelector" type="Module" version="05.00.00">
+            <friendlyName>MLLanguageSelector</friendlyName>
+            <description>This is a module/skinobject which allows you to select the language of your portal. </description>
+            <owner>
+                <name>Erik van Ballegoij</name>
+                <organization></organization>
+                <url>
+                    <![CDATA[<a href="http://www.erikvanballegoij.com">www.erikvanballegoij.com</a>]]>
+                </url>
+                <email>
+                    <![CDATA[<a href="mailto:erik.vanballegoij@gmail.com">erik.vanballegoij@gmail.com</a>]]>
+                </email>
+            </owner>
+            <license src="Documentation/License.htm"/>
+            <releaseNotes src="Documentation/releasenotes.htm"/>
+            <dependencies>
+                <dependency type="CoreVersion">05.06.00</dependency>
+            </dependencies>
+            <components>
+                <component type="Script">
+                    <scripts>
+                        <basePath>DesktopModules\MLLanguageSelector</basePath>
+                        <script type="Install">
+                            <path>Providers\DataProviders\SqlDataProvider</path>
+                            <name>05.00.00.SqlDataProvider</name>
+                            <version>05.00.00</version>
+                        </script>
+                        <script type="UnInstall">
+                            <path>Providers\DataProviders\SqlDataProvider</path>
+                            <name>Uninstall.SqlDataProvider</name>
+                            <version>05.00.00</version>
+                        </script>
+                    </scripts>
+                </component>
+                <component type="Module">
+                    <desktopModule>
+                        <moduleName>MLLanguageSelector</moduleName>
+                        <foldername>MLLanguageSelector</foldername>
+                        <moduleDefinitions>
+                            <moduleDefinition>
+                                <friendlyName>MLLanguageSelector</friendlyName>
+                                <defaultCacheTime>0</defaultCacheTime>
+                                <moduleControls>
+                                    <moduleControl>
+                                        <controlKey />
+                                        <controlSrc>DesktopModules/MLLanguageSelector/MLLanguageSelector.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <controlTitle>MLLanguageSelector</controlTitle>
+                                        <controlType>View</controlType>
+                                        <iconFile />
+                                        <helpUrl>http://erikvanballegoij.com/DotNetNuke/Online-Help?module=MLLanguageSelector</helpUrl>
+                                        <viewOrder>0</viewOrder>
+                                    </moduleControl>
+                                    <moduleControl>
+                                        <controlKey>Settings</controlKey>
+                                        <controlSrc>DesktopModules/MLLanguageSelector/Settings.ascx</controlSrc>
+                                        <supportsPartialRendering>False</supportsPartialRendering>
+                                        <controlTitle>MLLanguageSelector Settings</controlTitle>
+                                        <controlType>Edit</controlType>
+                                        <iconFile />
+                                        <helpUrl>http://erikvanballegoij.com/DotNetNuke/Online-Help?module=MLLanguageSelector</helpUrl>
+                                        <viewOrder>0</viewOrder>
+                                    </moduleControl>
+                                </moduleControls>
+                            </moduleDefinition>
+                        </moduleDefinitions>
+                    </desktopModule>
+                </component>
+                <component type="Assembly">
+                    <assemblies>
+                        <basePath>bin</basePath>
+                        <assembly>
+                            <name>Apollo.DNN.SkinObjects.MLLanguageSelector.dll</name>
+                        </assembly>
+                    </assemblies>
+                </component>
+                <component type="File">
+                    <files>
+                        <basePath>DesktopModules\MLLanguageSelector</basePath>
+                        <file>
+                            <name>Apollo.MLLanguageSelector.dnn</name>
+                        </file>
+                    </files>
+                </component>
+                <component type="ResourceFile">
+                    <resourceFiles>
+                        <basePath>DesktopModules\MLLanguageSelector</basePath>
+                        <resourceFile>
+                            <name>Resources.zip</name>
+                        </resourceFile>
+                    </resourceFiles>
+                </component>
+            </components>
+        </package>
+    </packages>
+</dotnetnuke>
