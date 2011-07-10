@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Horizontal.Text" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="Vertical.Text" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="plDisplayType.Text" xml:space="preserve">
+    <value>Display type:</value>
+  </data>
+  <data name="plDisplayType.Help" xml:space="preserve">
+    <value>The display type controls the displayed name of languages. See help for more info</value>
+  </data>
+  <data name="plSeparator.Text" xml:space="preserve">
+    <value>Seperator:</value>
+  </data>
+  <data name="plSeparator.Help" xml:space="preserve">
+    <value>This is the text to seperate flags or hyperlinks</value>
+  </data>
+  <data name="plCssClass.Text" xml:space="preserve">
+    <value>Css Class Name</value>
+  </data>
+  <data name="plCssClass.Help" xml:space="preserve">
+    <value>The CSS class name used to format the menu and the hyperlinks</value>
+  </data>
+  <data name="plHideCurrent.Text" xml:space="preserve">
+    <value>Hide Current:</value>
+  </data>
+  <data name="plHideCurrent.Help" xml:space="preserve">
+    <value>In flags and hyperlink view hide the current language</value>
+  </data>
+  <data name="plAlignment.Text" xml:space="preserve">
+    <value>Alignment:</value>
+  </data>
+  <data name="plAlignment.Help" xml:space="preserve">
+    <value>Controls the flow of flags and hyperlinks</value>
+  </data>
+  <data name="plHyperlinks.Text" xml:space="preserve">
+    <value>Show Hyperlinks:</value>
+  </data>
+  <data name="plHyperlinks.Help" xml:space="preserve">
+    <value>Show language hyperlinks</value>
+  </data>
+  <data name="plFlags.Help" xml:space="preserve">
+    <value>Show flag hyperlinks</value>
+  </data>
+  <data name="plFlags.Text" xml:space="preserve">
+    <value>Show flags:</value>
+  </data>
+  <data name="plMenu.Text" xml:space="preserve">
+    <value>Show Drop Down Menu:</value>
+  </data>
+  <data name="plMenu.Help" xml:space="preserve">
+    <value>Show drop down menu</value>
+  </data>
+  <data name="plDisplayLabel.Text" xml:space="preserve">
+    <value>Show Label:</value>
+  </data>
+  <data name="plDisplayLabel.Help" xml:space="preserve">
+    <value>Show Label.</value>
+  </data>
+  <data name="plLabelCssClass.Text" xml:space="preserve">
+    <value>Label CSS Class:</value>
+  </data>
+  <data name="plLabelCssClass.Help" xml:space="preserve">
+    <value>The CSS class name used to format the label</value>
+  </data>
+  <data name="DisplayName.Text" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="EnglishName.Text" xml:space="preserve">
+    <value>English Name</value>
+  </data>
+  <data name="Lcid.Text" xml:space="preserve">
+    <value>Locale Identifier</value>
+  </data>
+  <data name="Name.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NativeName.Text" xml:space="preserve">
+    <value>Native Name</value>
+  </data>
+  <data name="TwoLetterIsoCode.Text" xml:space="preserve">
+    <value>Two Letter Iso Code</value>
+  </data>
+  <data name="ThreeLetterIsoCode.Text" xml:space="preserve">
+    <value>Three Letter Iso Code</value>
+  </data>
+  <data name="NativeLanguageName.Text" xml:space="preserve">
+    <value>Native Language Name</value>
+  </data>
+  <data name="EnglishLanguageName.Text" xml:space="preserve">
+    <value>English Language Name</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;
+        Apollo MLLanguageSelector Module/SkinObject&lt;/h1&gt;
+    &lt;h4&gt;
+        Installation&lt;/h4&gt;
+    &lt;p&gt;
+        Installation of the Module/SkinObject is done in the same way as any other&amp;nbsp;DotNetNuke®
+        Module: select the option 'module definitions' from the 'Host' menu, and select
+        "Upload new module" from the action menu. Select the PA zip file on your local computer,
+        and click "upload new file". The selector is now installed. The language selector
+        can be used as a skin object or as a module. You can see in the sample skin how
+        you can use the selector as a skin object.&lt;/p&gt;
+    &lt;p&gt;
+        The package also contains one sample skin, derived from the standard dnn-blue skin,
+        you can install this skin in your portal to start working immediately with the language
+        selector. Mind you, the sample skin also contains references to the Apollo PageLocalization
+        module. If you did not install Apollo PageLocalization, the skins that have "PL"
+        in the name, will not work as expected.&lt;/p&gt;
+    &lt;h4&gt;
+        Upgrading&lt;/h4&gt;
+    &lt;p&gt;
+        If you are using a previous version of MLLanguageSelector, you can just install
+        this version in the normal way. However, due to the changes in rendering of the
+        selector, if you are using the language selector as a skinobject, and the admin
+        skin contains a language selector, you will see a viewstate load error. This error
+        will look something like this:&lt;/p&gt;
+    &lt;blockquote dir="ltr" style="margin-right: 0px"&gt;
+        &lt;p&gt;
+            &lt;font face="Courier New"&gt;Failed to load viewstate. The control tree into which viewstate
+                is being loaded must match the control tree that was used to save viewstate during
+                the previous request. For example, when adding controls dynamically, the controls
+                added during a post-back must match the type and position of the controls added
+                during the initial request. &lt;/font&gt;
+        &lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;p dir="ltr"&gt;
+        Once you navigate to any other page in your portal, this error will disapperar,
+        and everything will be ok.&lt;/p&gt;
+    &lt;h4 dir="ltr"&gt;
+        Usage&lt;/h4&gt;
+    &lt;p&gt;
+        The language selector supports 3 modes: menu, flags and hyperlinks. Although you
+        can use the 3 modes concurrently, typically you will select either one of the modes.
+        The advantage of using the flags mode or the hyperlinksmode is that these modes
+        cause the selector to render basic hyperlinks which can be easily followed by any
+        search indexing spider. using this will make sure that search engines find all languages
+        of your site, not only the default language!&lt;/p&gt;
+    &lt;p&gt;
+        Another feature of the MLLanguageSelector is the ability to map languages to another
+        language. This is useful in the following situation: suppose you have a portal that
+        supports 3 languages, and you finished adding content for 2 languages, and are still
+        working on content for the 3rd language. If your portal is publicly available, your
+        visitors will be able to also see the 3th language. If you disable the 3rd language
+        in admin&amp;gt;languages, then the language can still be "automatically" selected if
+        it's the first preferred language in the browsersettings of the anonymous user.
+        Furthermore, you won't be able to select the language yourself, so how would you
+        be able to continue adding your content?. Comes in MLLanguageSelector. With the
+        MapLanguages feature, you can redirect all requests for the 3rd language to one
+        of the 2 other languages, but you yourself will always be able to see and select
+        the third language. So you can edit content for your third language in peace, and
+        just make it available whenever you like (by removing the mapped language setting).
+        Of course mapped languages will be invisible in the language selector&lt;/p&gt;
+    &lt;p&gt;
+        If only one language would be rendered in the selector, and attribute HideCurrent
+        has been set to True, then the languageselector will render nothing at all&lt;/p&gt;
+    &lt;p&gt;
+        The module with a basic module.css stylesheet (in the folder /DesktopModules/MLLanguageSelector/),
+        which is used for both the module &lt;b&gt;and&lt;/b&gt; the skinobject. This stylesheet is
+        used to format the tables that are used to render the language selector. You can
+        edit these settings, or override them in your skin.css to make the display different.
+        You can turn off the usage of the stylesheet for skinobjects by adding the attribute
+        &lt;font face="Courier New"&gt;UseStyleSheetForSkinobject = "False"&lt;/font&gt; to the skinobject
+        definition. This option is not available in the module settings, simply because
+        it has no meaning for a module. This means that this attribute will not be generated
+        by the Generate SkinObject attributes option in the module settings either.&lt;/p&gt;
+    &lt;h4&gt;
+        CSS Classes in Module.CSS&lt;/h4&gt;
+    &lt;p&gt;
+        Rendering of the module/skinobject is done in table form, which is a break from
+        previous versions, which rendered the selector as is. The main reason for this change
+        is a better control in the layout of the language selector. You can adjust the layout
+        by changing the module.css file that comes with the language selector. This is the
+        default css file:&lt;/p&gt;
+    &lt;p align="center"&gt;
+        &lt;textarea rows="20" cols="50" style="width: 500px"&gt;
+/* ================================
+    CSS STYLES FOR Module/Skinobject Apollo.MLLanguageSelector
+   ================================
+*/
+
+/* 
+   =============================================
+   classes for the main layout table
+   =============================================
+*/
+
+
+/* use this class to set styles for the entire layout table*/
+.MLLanguageMenuLayoutTable
+{
+  /* enable display:inline if the language selector should be rendered inline, 
+     for instance if the selector is not positioned in its own table cell and flags/hyperlinks are visible 
+     (otherwise use the class ".MLLanguageMenuTable" to control display) */
+
+  /* display:inline; */
+}
+
+/* if display is set to horizontal, only one row is rendered, use this class to style that row*/
+.MLLanguageMenuLayoutTableRow1
+{
+	
+}
+
+/* 
+	if display is set to vertical, 2 rows can be rendered. One for the label and dropdownmenu, 
+	and one for the flags/hyperlinks.
+    use this class to style the second row
+*/
+.MLLanguageMenuLayoutTableRow2
+{
+	
+}
+
+
+/* 
+   =============================================
+   classes for the table used to display the dropdownmenu
+   =============================================
+*/
+
+/* class for the complete table*/
+.MLLanguageMenuTable
+{
+  /* enable display:inline if the language selector should be rendered inline, 
+     for instance if the selector is not positioned in its own table cell and only the menu is visible 
+     (otherwise use the class ".MLLanguageMenuLayoutTable" to control display) */
+
+  /*display:inline; */
+}
+
+/* class for the cell that contains the label */
+.MLLanguageMenuLabelCell
+{
+		white-space:nowrap;
+}
+
+/* class for the cell that contains the left flag*/
+.MLLanguageMenuLeftFlagCell
+{
+}
+
+/* class for the cell that contains the dropdown menu */
+.MLLanguageMenuMenuCell
+{
+		white-space:nowrap;
+}
+
+/* class for the cell that contains the right flag */
+.MLLanguageMenuRightFlagCell
+{
+}
+
+
+/* 
+   =============================================
+   classes for the table which in which the flags and urls are rendered
+   =============================================
+*/
+
+/* class for the complete table */
+.MLLanguageSelectionItemTable
+{
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+
+/* class for the cells that contain the flags*/
+.MLLanguageSelectionItemFlag
+{
+	padding:2px;
+	margin:0px;
+	width:34px;
+	text-align:center ;
+}
+
+/* class for the cells that contain the hyperlinks*/
+.MLLanguageSelectionItemURL
+{
+	padding:2px;
+	margin:0px;
+	white-space:nowrap;
+	text-align:center ;
+}
+
+/* class for the rows that contain the flags and hyperlinks*/
+.MLLanguageSelectionItemRow
+{
+}
+			&lt;/textarea&gt;&lt;/p&gt;
+    &lt;p&gt;
+        &lt;strong&gt;NOTE&lt;/strong&gt;: if you are using the language selector with other controls
+        in the same placeholder/tablecell in your skin, due to the use of tables, you will
+        experience some alignment problems. You have to options: set the display of the
+        enclosing table for the selector to &lt;font face="Courier New"&gt;inline &lt;/font&gt;(either
+        in class &lt;font face="Courier New"&gt;MLLanguageMenuLayoutTable&lt;/font&gt; or in class &lt;font
+            face="Courier New"&gt;MLLanguageMenuTable&lt;/font&gt;, depending on whether you are
+        showing&amp;nbsp;flags/hyperlinks)&lt;/p&gt;
+    &lt;h4&gt;
+        Attributes for the SkinObject&lt;/h4&gt;
+    &lt;p&gt;
+        If you use the selector as a skin object, you can pass a couple of parameters to
+        the language selector, with these parameters you control the behavior. These same
+        parameters can be set if you use the selector as a module, via the module settings
+        option. &lt;b&gt;NB&lt;/b&gt;: from the module settings page, you can generate the correct attributes
+        for use with the skinobject. You can choose to either generate ascx type attributes,
+        which will generate the complete skinobject for you, or xml type attributes, which
+        will generate the correct xml settings for the language selector.&lt;/p&gt;
+    &lt;p&gt;
+        The following settings / parameters are supported:&lt;/p&gt;
+    &lt;table id="table6" style="border-collapse: collapse" cellpadding="3" border="1" class="normal"
+        bordercolor="#000000"&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                &lt;b&gt;parameter&lt;/b&gt;
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                &lt;b&gt;use&lt;/b&gt;
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                &lt;b&gt;allowed values&lt;/b&gt;
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                &lt;b&gt;default value&lt;/b&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                DisplayType
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Selects how the name of the language is rendered. Resourcename means that the names
+                for languages will be pulled from the resource file. This is usefull if the automatic
+                language/country name is not to your liking. The resources can be found in the file
+                MLLanguageSelector.ascx.[Locale].resx
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                &lt;p&gt;
+                    EnglishName&lt;br /&gt;
+                    Lcid&lt;br /&gt;
+                    Name&lt;br /&gt;
+                    NativeName&lt;br /&gt;
+                    TwoLetterISOCode&lt;br /&gt;
+                    ThreeLetterISOCode&lt;br /&gt;
+                    NativeLanguageName&lt;br /&gt;
+                    EnglishLanguageName&lt;br /&gt;
+                    ResourceName&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                NativeLanguageName
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                cssClass
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Sets the style of the dropdown menu and the links
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                any valid css class name
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                skinobject
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                Alignment
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                To render&amp;nbsp; the links and/or flags of the selector horizontal or vertical
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Horizontal&lt;br /&gt;
+                Vertical
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Horizontal
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                Separator
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                To separate the links/flags. Use cssClass to format the separator
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                any valid html
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                empty
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                hideCurrent
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Hides the current selected language in the flag/links view. A special case is the
+                use of this attribute in combination with the Menu. Due to the nature of the dropdown
+                menu, hidecurrent is not supported for the menu, as this would hide the current
+                language, making a different language seemingly selected in the selector. That language
+                can not be selected, because it is already "selected". There is one exception to
+                this: if there is only one language available for display in the menu, the menu
+                (and the flagimage for the active language) will be invisible.
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                Hyperlinks
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Show hyperlinks. This will render a hyperlink for all available languages
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                False
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                Flags
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Shows flags. This will render a flag image/hyperlink for all available languages.
+                All flags for DotNetNuke supported cultures (which is a subset of all asp.net 1.1
+                supported cultures) are included, in total 110. If you want to use your own flag,
+                save a .gif image in the "flags" directory of the selector directory (the selector
+                is installed in /desktopmodules/MLLanguageSelector/). Name your files after the
+                2-letter &lt;a target="_blank" href="http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html"&gt;
+                    iso 3166&lt;/a&gt; countrycode (so for instance "us.gif" for United States)
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                False
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                Menu
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Show menu. This will render language dropdown menu. See remarks for attribute HideCurrent.
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                MenuFlagPosition
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Setting to display a flag for the current selected language left or right from the
+                pulldown menu
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                None&lt;br /&gt;
+                Left&lt;br /&gt;
+                Right
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                None
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                displayLabel
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Show a label in front of the selector
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                False
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                LabelCSSClass
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                CSS class to be used for the label
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                any valid cssclass
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                skinobject
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                OnlyLanguageCode
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Use only language codes to switch languages (ie: "en" instead of "en-US"). This
+                setting has not real impact, other than a small cleanup in your url: instead of
+                language=en-US you will see: language=en. Note: if you have multiple locales for
+                the same language installed (eg. en-US and en-GB, then this setting will cause one
+                of the locales to be allways selected for both locales.
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                False
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                ForceHidden
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Force the language selector to be invisible. Use this setting if you want to use
+                the language selector only as a language mapping control
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                False
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                UseStyleSheetForSkinobject
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Load module.css when only the skinobject is used. Disable loading of module.css
+                when you get unwanted interference in your skin.css
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                MapLanguages
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Setting for mapping languages from one language to another. By mapping is meant:
+                redirect requests for mapped language to destination language. Syntax: [sourceLocale]:[destinationLocale].
+                You can add multiple mapped languages by seperating the mappings by a semicolon
+                (;).
+                &lt;br /&gt;
+                Eg.: "en-US:en-GB;de-DE:nl-NL" for a Dutch site with 4 installed locales: en-US,
+                en-GB, de-DE and nl-NL. We want all english requests to be redirected to the en-GB
+                version of our site, and for the time being, while we work on the German version
+                of our site, we want to redirect our German visitors to our Dutch site.
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                [sourceLocale]:[destinationLocale]
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                empty
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                MapDomains
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Setting for mapping domains to a specific languages.&amp;nbsp;At this moment only fully
+                qualified domain names are supported, which means that the domain name cannot contain
+                a forward slash ("/"). &amp;nbsp;
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                [fully qualified domain name]:[destinationLocale]
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                empty
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                useFullLocaleCode
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Setting which allows you to set the way flag images are referenced. This is a change
+                from earlier versions, the default value is True, which means that flags are referenced
+                with the full locale code, ie. nl-NL or en-US
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                tableLess
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                As there is a lot of focus on tableless designs, you can now let the selector render
+                tableless as well. The default is False, to prevent breaking of skins
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True&lt;br /&gt;
+                False
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                True
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                altFlagLocation
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                You can now use your own flag images. If you use this attribute, the foldername
+                should be relative from the portal root directory. If your portalID is 1, you might
+                pass this value: "flags/16x16". The full name for a Dutch flag would then be: /portals/1/flags/16x16/nl-NL.gif.
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                any valid path under the portal root dir
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                empty
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                altImageType
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                If your alternative flag images are not gif but png or something else, you can pass
+                a different extension with this parameter
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                any valid image extension. You do not need to use the preceding dot
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                empty
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td valign="top"&gt;
+                FlagType
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                Allows you to choose from (currently) 2 different flagtypes: simple and modern.
+                The default value is &amp;quot;simple&amp;quot;
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                simple&lt;br /&gt;
+                modern
+            &lt;/td&gt;
+            &lt;td valign="top"&gt;
+                simple
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;
+        (c) 2005-2009 - Apollo Software - &lt;a href="http://www.apollo-software.nl"&gt;www.apollo-software.nl&lt;/a&gt;
+    &lt;/p&gt;</value>
+  </data>
+  <data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>MLLanguageSelector Settings</value>
+  </data>
+  <data name="plOnlyLanguageCode.Text" xml:space="preserve">
+    <value>Use only language code:</value>
+  </data>
+  <data name="plOnlyLanguageCode.Help" xml:space="preserve">
+    <value>When checked, the language selector will pass only a language to the server (eg. "en" instead of "en-US")</value>
+  </data>
+  <data name="plForceHidden.Text" xml:space="preserve">
+    <value>Hide selector:</value>
+  </data>
+  <data name="plForceHidden.Help" xml:space="preserve">
+    <value>When checked, none of the available languages will be rendered.&lt;br&gt;&lt;b&gt;Tip&lt;/b&gt; You can use this option in combination with map languages to redirect requests for one language to another.</value>
+  </data>
+  <data name="plMapLanguages.Text" xml:space="preserve">
+    <value>Map languages</value>
+  </data>
+  <data name="plMapLanguages.Help" xml:space="preserve">
+    <value>You can map one or more languages to one or more other languages. This can be useful if you have a language available in your portal that you don't want your visitors to view pages in. Syntax: [source locale]:[destination locale], eg. de-DE:en-US. You can separate multiple mappings by a semicolon (;).See help text for more information.</value>
+  </data>
+  <data name="None.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Left.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="Right.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="plMenuFlagPosition.Text" xml:space="preserve">
+    <value>Position of active language flag:</value>
+  </data>
+  <data name="plMenuFlagPosition.Help" xml:space="preserve">
+    <value>Use this option to select whether and were a flag depicting the active language should be displayed.&lt;br&gt;&lt;b&gt;NB&lt;/b&gt; This flag will only be displayed when the drop down menu is visible.</value>
+  </data>
+  <data name="plGenerateType.Text" xml:space="preserve">
+    <value>Generate for:</value>
+  </data>
+  <data name="plGenerateType.Help" xml:space="preserve">
+    <value>Here you can generate the necessary attributes for the MLLanguageSelector skinobject. You can generate for use in .ascx file, or for use in skin.xml file. The options as set above will be used.</value>
+  </data>
+  <data name="btnGenerateNow.Text" xml:space="preserve">
+    <value>Generate Now</value>
+  </data>
+  <data name="valMapLanguages.Error" xml:space="preserve">
+    <value>&lt;br&gt;Syntax is not correct. Either u used a non existent language code, wrong punctiation or a circular reference</value>
+  </data>
+  <data name="plUseStyleSheetForSkinObject.Text" xml:space="preserve">
+    <value>Use Style Sheet For Skinobject:</value>
+  </data>
+  <data name="plUseStyleSheetForSkinObject.Help" xml:space="preserve">
+    <value>When this option is checked, the file "module.css" will also be loaded if the module is used as a skin object. As default, DotNetNuke does not load stylesheets for skinobjects.&lt;br&gt;&lt;b&gt;NB&lt;/b&gt; This setting has only effect when used as skin object, and is available here if you want to generate the skin object settings.</value>
+  </data>
+  <data name="plUseFullLocaleCode.Text" xml:space="preserve">
+    <value>Use Full Locale Code:</value>
+  </data>
+  <data name="plUseFullLocaleCode.Help" xml:space="preserve">
+    <value>As default, the language selector use full locale codes to link to images (ie. en-US.gif instead of US.gif), you can turn this option off is your flag images require this.</value>
+  </data>
+  <data name="plTableLess.Text" xml:space="preserve">
+    <value>Tableless:</value>
+  </data>
+  <data name="plTableLess.Help" xml:space="preserve">
+    <value>As default, the language selector uses tables to render itself, you can turn this behavior off, the language selector will use "div" and "span" elements instead.</value>
+  </data>
+  <data name="plAltFlagLocation.Text" xml:space="preserve">
+    <value>Alternate Flags Location:</value>
+  </data>
+  <data name="plAltFlagLocation.Help" xml:space="preserve">
+    <value>Here you can specify an alternate location for your flag images. The selector expects this location to be in your portal root folder, so if your alternate location is the folder named "flags" in your portal root, then all you need to enter here is "flags". </value>
+  </data>
+  <data name="plAltImageType.Text" xml:space="preserve">
+    <value>Alternate Image Type:</value>
+  </data>
+  <data name="plAltImageType.Help" xml:space="preserve">
+    <value>As default, the language selector expects images of the type "gif" to be used, you can change this into a value of your own. You dont have to use the ".", the extension name is sufficient.</value>
+  </data>
+  <data name="ResourceName.Text" xml:space="preserve">
+    <value>Name from Resourcefile</value>
+  </data>
+  <data name="SKOSettings.Text" xml:space="preserve">
+    <value>Skinobject Settings</value>
+  </data>
+  <data name="plMapDomains.Text" xml:space="preserve">
+    <value>Map Domains</value>
+  </data>
+  <data name="valMapDomains.Error" xml:space="preserve">
+    <value>&lt;br&gt;Syntax is not correct. Either u used a non domain (domains must be part of the http aliases of this portal), a childportal alias (domain includes a "/") or wrong punctuation</value>
+  </data>
+  <data name="plMapDomains.Help" xml:space="preserve">
+    <value>You can map one or more domains to one or more different languages. The languageselector will add the proper querystring variable to the url to ensure a proper language. Only domains that are listed in the portal's http alias list can be used, and only fully quallified domain names. Child portal http aliases are not supported.</value>
+  </data>
+  <data name="Modern.Text" xml:space="preserve">
+    <value>Modern</value>
+  </data>
+  <data name="Simple.Text" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="FlagType.Text" xml:space="preserve">
+    <value>Flag Type</value>
+  </data>
+  <data name="plFlagType.Help" xml:space="preserve">
+    <value>Select the flagtype you want to display. This will not used if an alternate flag location is used</value>
+  </data>
+  <data name="plFlagType.Text" xml:space="preserve">
+    <value>Flagtype</value>
+  </data>
+</root>

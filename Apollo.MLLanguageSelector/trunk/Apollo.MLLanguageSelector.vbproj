@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08AC977B-0696-4C42-B2BE-8DD56E4FE4FC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Apollo.DNN.SkinObjects.MLLanguageSelector</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>Apollo.DNN.SkinObjects.MLLanguageSelector</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Apollo.DNN.SkinObjects.MLLanguageSelector.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Apollo.DNN.SkinObjects.MLLanguageSelector.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetNuke">
+      <HintPath>_Dependencies\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DotNetNuke" />
+    <Import Include="DotNetNuke.Common" />
+    <Import Include="DotNetNuke.Common.Utilities" />
+    <Import Include="DotNetNuke.Data" />
+    <Import Include="DotNetNuke.Entities.Users" />
+    <Import Include="DotNetNuke.Framework" />
+    <Import Include="DotNetNuke.Services.Exceptions" />
+    <Import Include="DotNetNuke.UI" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Dependencies\DotNetNuke.dll" />
+    <Content Include="_Dependencies\MSBuild\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="_Dependencies\MSBuild\MSBuild.Community.Tasks.dll" />
+    <None Include="Apollo.MLLanguageSelector.dnn">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Apollo.MLLanguageSelector.dnn5" />
+    <None Include="msbuild\Project.targets" />
+    <None Include="Providers\DataProviders\SqlDataProvider\05.00.00.SqlDataProvider" />
+    <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
+    <Compile Include="Components\menuFlagPositions.ascx.vb" />
+    <Compile Include="Components\displayTypes.ascx.vb" />
+    <Compile Include="MLLanguageSelector.ascx.designer.vb">
+      <DependentUpon>MLLanguageSelector.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MLLanguageSelector.ascx.vb">
+      <DependentUpon>MLLanguageSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Settings.ascx.designer.vb">
+      <DependentUpon>Settings.ascx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.ascx.vb">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Documentation\License.htm" />
+    <Content Include="Documentation\readme.htm" />
+    <Content Include="Documentation\releasenotes.htm" />
+    <Content Include="flags\simple\af-ZA-Cyrl.gif" />
+    <Content Include="flags\simple\af-ZA-Latn.gif" />
+    <Content Include="flags\simple\ar-AE.gif" />
+    <Content Include="flags\simple\ar-BH.gif" />
+    <Content Include="flags\simple\ar-DZ.gif" />
+    <Content Include="flags\simple\ar-EG.gif" />
+    <Content Include="flags\simple\ar-IQ.gif" />
+    <Content Include="flags\simple\ar-JO.gif" />
+    <Content Include="flags\simple\ar-KW.gif" />
+    <Content Include="flags\simple\ar-LB.gif" />
+    <Content Include="flags\simple\ar-LY.gif" />
+    <Content Include="flags\simple\ar-MA.gif" />
+    <Content Include="flags\simple\ar-OM.gif" />
+    <Content Include="flags\simple\ar-QA.gif" />
+    <Content Include="flags\simple\ar-SA.gif" />
+    <Content Include="flags\simple\ar-SY.gif" />
+    <Content Include="flags\simple\ar-TN.gif" />
+    <Content Include="flags\simple\ar-YE.gif" />
+    <Content Include="flags\simple\arn-CL.gif" />
+    <Content Include="flags\simple\az-AZ.gif" />
+    <Content Include="flags\simple\be-BY.gif" />
+    <Content Include="flags\simple\bg-BG.gif" />
+    <Content Include="flags\simple\bn-IN.gif" />
+    <Content Include="flags\simple\bs-BA-Cyrl.gif" />
+    <Content Include="flags\simple\bs-BA-Latn.gif" />
+    <Content Include="flags\simple\ca-ES.gif" />
+    <Content Include="flags\simple\cs-CZ.gif" />
+    <Content Include="flags\simple\cy-GB.gif" />
+    <Content Include="flags\simple\da-DK.gif" />
+    <Content Include="flags\simple\de-AT.gif" />
+    <Content Include="flags\simple\de-CH.gif" />
+    <Content Include="flags\simple\de-DE.gif" />
+    <Content Include="flags\simple\de-LI.gif" />
+    <Content Include="flags\simple\de-LU.gif" />
+    <Content Include="flags\simple\div-MV.gif" />
+    <Content Include="flags\simple\el-GR.gif" />
+    <Content Include="flags\simple\en-AU.gif" />
+    <Content Include="flags\simple\en-BZ.gif" />
+    <Content Include="flags\simple\en-CA.gif" />
+    <Content Include="flags\simple\en-GB.gif" />
+    <Content Include="flags\simple\en-IE.gif" />
+    <Content Include="flags\simple\en-JM.gif" />
+    <Content Include="flags\simple\en-NZ.gif" />
+    <Content Include="flags\simple\en-PH.gif" />
+    <Content Include="flags\simple\en-TT.gif" />
+    <Content Include="flags\simple\en-US.gif" />
+    <Content Include="flags\simple\en-ZA.gif" />
+    <Content Include="flags\simple\en-ZW.gif" />
+    <Content Include="flags\simple\es-AR.gif" />
+    <Content Include="flags\simple\es-BO.gif" />
+    <Content Include="flags\simple\es-CL.gif" />
+    <Content Include="flags\simple\es-CO.gif" />
+    <Content Include="flags\simple\es-CR.gif" />
+    <Content Include="flags\simple\es-DO.gif" />
+    <Content Include="flags\simple\es-EC.gif" />
+    <Content Include="flags\simple\es-ES.gif" />
+    <Content Include="flags\simple\es-GT.gif" />
+    <Content Include="flags\simple\es-HN.gif" />
+    <Content Include="flags\simple\es-MX.gif" />
+    <Content Include="flags\simple\es-NI.gif" />
+    <Content Include="flags\simple\es-PA.gif" />
+    <Content Include="flags\simple\es-PE.gif" />
+    <Content Include="flags\simple\es-PR.gif" />
+    <Content Include="flags\simple\es-PY.gif" />
+    <Content Include="flags\simple\es-SV.gif" />
+    <Content Include="flags\simple\es-UY.gif" />
+    <Content Include="flags\simple\es-VE.gif" />
+    <Content Include="flags\simple\et-EE.gif" />
+    <Content Include="flags\simple\eu-ES.gif" />
+    <Content Include="flags\simple\fa-AF.gif" />
+    <Content Include="flags\simple\fa-IR.gif" />
+    <Content Include="flags\simple\fi-FI.gif" />
+    <Content Include="flags\simple\fil-PH.gif" />
+    <Content Include="flags\simple\fo-FO.gif" />
+    <Content Include="flags\simple\fr-BE.gif" />
+    <Content Include="flags\simple\fr-CA.gif" />
+    <Content Include="flags\simple\fr-CH.gif" />
+    <Content Include="flags\simple\fr-FR.gif" />
+    <Content Include="flags\simple\fr-LU.gif" />
+    <Content Include="flags\simple\fr-MC.gif" />
+    <Content Include="flags\simple\ga-IE.gif" />
+    <Content Include="flags\simple\gl-ES.gif" />
+    <Content Include="flags\simple\gu-IN.gif" />
+    <Content Include="flags\simple\he-IL.gif" />
+    <Content Include="flags\simple\hi-IN.gif" />
+    <Content Include="flags\simple\hr-BA.gif" />
+    <Content Include="flags\simple\hr-HR.gif" />
+    <Content Include="flags\simple\hu-HU.gif" />
+    <Content Include="flags\simple\hy-AM.gif" />
+    <Content Include="flags\simple\id-ID.gif" />
+    <Content Include="flags\simple\is-IS.gif" />
+    <Content Include="flags\simple\it-CH.gif" />
+    <Content Include="flags\simple\it-IT.gif" />
+    <Content Include="flags\simple\iu-CA-Latn.gif" />
+    <Content Include="flags\simple\ja-JP.gif" />
+    <Content Include="flags\simple\ka-GE.gif" />
+    <Content Include="flags\simple\kk-KZ.gif" />
+    <Content Include="flags\simple\kn-IN.gif" />
+    <Content Include="flags\simple\ko-KR.gif" />
+    <Content Include="flags\simple\kok-IN.gif" />
+    <Content Include="flags\simple\ky-KZ.gif" />
+    <Content Include="flags\simple\lb-LU.gif" />
+    <Content Include="flags\simple\lt-LT.gif" />
+    <Content Include="flags\simple\lv-LV.gif" />
+    <Content Include="flags\simple\mi-NZ.gif" />
+    <Content Include="flags\simple\mk-MK.gif" />
+    <Content Include="flags\simple\ml-IN.gif" />
+    <Content Include="flags\simple\mn-MN.gif" />
+    <Content Include="flags\simple\moh-CA.gif" />
+    <Content Include="flags\simple\mr-IN.gif" />
+    <Content Include="flags\simple\ms-BN.gif" />
+    <Content Include="flags\simple\ms-MY.gif" />
+    <Content Include="flags\simple\mt-MT.gif" />
+    <Content Include="flags\simple\nb-NO.gif" />
+    <Content Include="flags\simple\ne-NP.gif" />
+    <Content Include="flags\simple\nl-BE.gif" />
+    <Content Include="flags\simple\nl-NL.gif" />
+    <Content Include="flags\simple\nn-NO.gif" />
+    <Content Include="flags\simple\nso-ZA.gif" />
+    <Content Include="flags\simple\pa-IN.gif" />
+    <Content Include="flags\simple\pl-PL.gif" />
+    <Content Include="flags\simple\ps-AF.gif" />
+    <Content Include="flags\simple\pt-BR.gif" />
+    <Content Include="flags\simple\pt-PT.gif" />
+    <Content Include="flags\simple\quz-BO.gif" />
+    <Content Include="flags\simple\quz-EC.gif" />
+    <Content Include="flags\simple\quz-PE.gif" />
+    <Content Include="flags\simple\rm-CH.gif" />
+    <Content Include="flags\simple\ro-RO.gif" />
+    <Content Include="flags\simple\ru-RU.gif" />
+    <Content Include="flags\simple\sa-IN.gif" />
+    <Content Include="flags\simple\se-FI.gif" />
+    <Content Include="flags\simple\se-NO.gif" />
+    <Content Include="flags\simple\se-SE.gif" />
+    <Content Include="flags\simple\sk-SK.gif" />
+    <Content Include="flags\simple\sl-SI.gif" />
+    <Content Include="flags\simple\sma-NO.gif" />
+    <Content Include="flags\simple\sma-SE.gif" />
+    <Content Include="flags\simple\smj-NO.gif" />
+    <Content Include="flags\simple\smj-SE.gif" />
+    <Content Include="flags\simple\smn-FI.gif" />
+    <Content Include="flags\simple\sms-FI.gif" />
+    <Content Include="flags\simple\sq-AL.gif" />
+    <Content Include="flags\simple\sr-BA-Cyrl.gif" />
+    <Content Include="flags\simple\sr-BA-Latn.gif" />
+    <Content Include="flags\simple\sr-SP-Cyrl.gif" />
+    <Content Include="flags\simple\sr-SP-Latn.gif" />
+    <Content Include="flags\simple\sv-FI.gif" />
+    <Content Include="flags\simple\sv-SE.gif" />
+    <Content Include="flags\simple\sw-KE.gif" />
+    <Content Include="flags\simple\syr-SY.gif" />
+    <Content Include="flags\simple\ta-IN.gif" />
+    <Content Include="flags\simple\te-IN.gif" />
+    <Content Include="flags\simple\th-TH.gif" />
+    <Content Include="flags\simple\tn-ZA.gif" />
+    <Content Include="flags\simple\tr-TR.gif" />
+    <Content Include="flags\simple\tt-RU.gif" />
+    <Content Include="flags\simple\uk-UA.gif" />
+    <Content Include="flags\simple\ur-PK.gif" />
+    <Content Include="flags\simple\uz-UZ-Cyrl.gif" />
+    <Content Include="flags\simple\uz-UZ-Latn.gif" />
+    <Content Include="flags\simple\vi-VN.gif" />
+    <Content Include="flags\simple\wen-DE.gif" />
+    <Content Include="flags\simple\xh-ZA.gif" />
+    <Content Include="flags\simple\zh-CHS.gif" />
+    <Content Include="flags\simple\zh-CHT.gif" />
+    <Content Include="flags\simple\zh-CN.gif" />
+    <Content Include="flags\simple\zh-HK.gif" />
+    <Content Include="flags\simple\zh-HT.gif" />
+    <Content Include="flags\simple\zh-MO.gif" />
+    <Content Include="flags\simple\zh-SG.gif" />
+    <Content Include="flags\simple\zh-TW.gif" />
+    <Content Include="flags\simple\zu-ZA.gif" />
+    <Content Include="MLLanguageSelector.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="module.css" />
+    <Content Include="msbuild\version.txt" />
+    <Content Include="Settings.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <None Include="_Dependencies\MSBuild\MSBuild.Community.Tasks.Targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\MLLanguageSelector.ascx.nl-NL.resx" />
+    <Content Include="App_LocalResources\MLLanguageSelector.ascx.resx" />
+    <Content Include="App_LocalResources\Settings.ascx.nl-NL.resx" />
+    <Content Include="App_LocalResources\Settings.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\about.ascx.nl-NL.resx" />
+    <Content Include="App_LocalResources\about.ascx.resx" />
+    <Content Include="flags\modern\af-ZA.png" />
+    <Content Include="flags\modern\am-ET.png" />
+    <Content Include="flags\modern\ar-AE.png" />
+    <Content Include="flags\modern\ar-BH.png" />
+    <Content Include="flags\modern\ar-DZ.png" />
+    <Content Include="flags\modern\ar-EG.png" />
+    <Content Include="flags\modern\ar-IQ.png" />
+    <Content Include="flags\modern\ar-JO.png" />
+    <Content Include="flags\modern\ar-KW.png" />
+    <Content Include="flags\modern\ar-LB.png" />
+    <Content Include="flags\modern\ar-LY.png" />
+    <Content Include="flags\modern\ar-MA.png" />
+    <Content Include="flags\modern\ar-OM.png" />
+    <Content Include="flags\modern\ar-QA.png" />
+    <Content Include="flags\modern\ar-SA.png" />
+    <Content Include="flags\modern\ar-SY.png" />
+    <Content Include="flags\modern\ar-TN.png" />
+    <Content Include="flags\modern\ar-YE.png" />
+    <Content Include="flags\modern\arn-CL.png" />
+    <Content Include="flags\modern\as-IN.png" />
+    <Content Include="flags\modern\az-Cyrl-AZ.png" />
+    <Content Include="flags\modern\az-Latn-AZ.png" />
+    <Content Include="flags\modern\ba-RU.png" />
+    <Content Include="flags\modern\be-BY.png" />
+    <Content Include="flags\modern\bg-BG.png" />
+    <Content Include="flags\modern\bn-BD.png" />
+    <Content Include="flags\modern\bn-IN.png" />
+    <Content Include="flags\modern\bo-CN.png" />
+    <Content Include="flags\modern\br-FR.png" />
+    <Content Include="flags\modern\bs-Cyrl-BA.png" />
+    <Content Include="flags\modern\bs-Latn-BA.png" />
+    <Content Include="flags\modern\ca-ES.png" />
+    <Content Include="flags\modern\co-FR.png" />
+    <Content Include="flags\modern\cs-CZ.png" />
+    <Content Include="flags\modern\cy-GB.png" />
+    <Content Include="flags\modern\da-DK.png" />
+    <Content Include="flags\modern\de-AT.png" />
+    <Content Include="flags\modern\de-CH.png" />
+    <Content Include="flags\modern\de-DE.png" />
+    <Content Include="flags\modern\de-LI.png" />
+    <Content Include="flags\modern\de-LU.png" />
+    <Content Include="flags\modern\dsb-DE.png" />
+    <Content Include="flags\modern\dv-MV.png" />
+    <Content Include="flags\modern\el-GR.png" />
+    <Content Include="flags\modern\en-AU.png" />
+    <Content Include="flags\modern\en-BZ.png" />
+    <Content Include="flags\modern\en-CA.png" />
+    <Content Include="flags\modern\en-GB.png" />
+    <Content Include="flags\modern\en-IE.png" />
+    <Content Include="flags\modern\en-IN.png" />
+    <Content Include="flags\modern\en-JM.png" />
+    <Content Include="flags\modern\en-MY.png" />
+    <Content Include="flags\modern\en-NZ.png" />
+    <Content Include="flags\modern\en-PH.png" />
+    <Content Include="flags\modern\en-SG.png" />
+    <Content Include="flags\modern\en-TT.png" />
+    <Content Include="flags\modern\en-US.png" />
+    <Content Include="flags\modern\en-ZA.png" />
+    <Content Include="flags\modern\en-ZW.png" />
+    <Content Include="flags\modern\es-AR.png" />
+    <Content Include="flags\modern\es-BO.png" />
+    <Content Include="flags\modern\es-CL.png" />
+    <Content Include="flags\modern\es-CO.png" />
+    <Content Include="flags\modern\es-CR.png" />
+    <Content Include="flags\modern\es-DO.png" />
+    <Content Include="flags\modern\es-EC.png" />
+    <Content Include="flags\modern\es-ES.png" />
+    <Content Include="flags\modern\es-GT.png" />
+    <Content Include="flags\modern\es-HN.png" />
+    <Content Include="flags\modern\es-MX.png" />
+    <Content Include="flags\modern\es-NI.png" />
+    <Content Include="flags\modern\es-PA.png" />
+    <Content Include="flags\modern\es-PE.png" />
+    <Content Include="flags\modern\es-PR.png" />
+    <Content Include="flags\modern\es-PY.png" />
+    <Content Include="flags\modern\es-SV.png" />
+    <Content Include="flags\modern\es-US.png" />
+    <Content Include="flags\modern\es-UY.png" />
+    <Content Include="flags\modern\es-VE.png" />
+    <Content Include="flags\modern\et-EE.png" />
+    <Content Include="flags\modern\eu-ES.png" />
+    <Content Include="flags\modern\fa-IR.png" />
+    <Content Include="flags\modern\fi-FI.png" />
+    <Content Include="flags\modern\fil-PH.png" />
+    <Content Include="flags\modern\fo-FO.png" />
+    <Content Include="flags\modern\fr-BE.png" />
+    <Content Include="flags\modern\fr-CA.png" />
+    <Content Include="flags\modern\fr-CH.png" />
+    <Content Include="flags\modern\fr-FR.png" />
+    <Content Include="flags\modern\fr-LU.png" />
+    <Content Include="flags\modern\fr-MC.png" />
+    <Content Include="flags\modern\fy-NL.png" />
+    <Content Include="flags\modern\ga-IE.png" />
+    <Content Include="flags\modern\gd-GB.png" />
+    <Content Include="flags\modern\gl-ES.png" />
+    <Content Include="flags\modern\gsw-FR.png" />
+    <Content Include="flags\modern\gu-IN.png" />
+    <Content Include="flags\modern\ha-Latn-NG.png" />
+    <Content Include="flags\modern\he-IL.png" />
+    <Content Include="flags\modern\hi-IN.png" />
+    <Content Include="flags\modern\hr-BA.png" />
+    <Content Include="flags\modern\hr-HR.png" />
+    <Content Include="flags\modern\hsb-DE.png" />
+    <Content Include="flags\modern\hu-HU.png" />
+    <Content Include="flags\modern\hy-AM.png" />
+    <Content Include="flags\modern\id-ID.png" />
+    <Content Include="flags\modern\ig-NG.png" />
+    <Content Include="flags\modern\ii-CN.png" />
+    <Content Include="flags\modern\is-IS.png" />
+    <Content Include="flags\modern\it-CH.png" />
+    <Content Include="flags\modern\it-IT.png" />
+    <Content Include="flags\modern\iu-Cans-CA.png" />
+    <Content Include="flags\modern\iu-Latn-CA.png" />
+    <Content Include="flags\modern\iu-Latn.png" />
+    <Content Include="flags\modern\ja-JP.png" />
+    <Content Include="flags\modern\ka-GE.png" />
+    <Content Include="flags\modern\kk-KZ.png" />
+    <Content Include="flags\modern\kl-GL.png" />
+    <Content Include="flags\modern\km-KH.png" />
+    <Content Include="flags\modern\kn-IN.png" />
+    <Content Include="flags\modern\ko-KR.png" />
+    <Content Include="flags\modern\kok-IN.png" />
+    <Content Include="flags\modern\ky-KG.png" />
+    <Content Include="flags\modern\lb-LU.png" />
+    <Content Include="flags\modern\lo-LA.png" />
+    <Content Include="flags\modern\lt-LT.png" />
+    <Content Include="flags\modern\lv-LV.png" />
+    <Content Include="flags\modern\mi-NZ.png" />
+    <Content Include="flags\modern\mk-MK.png" />
+    <Content Include="flags\modern\ml-IN.png" />
+    <Content Include="flags\modern\mn-MN.png" />
+    <Content Include="flags\modern\mn-Mong-CN.png" />
+    <Content Include="flags\modern\moh-CA.png" />
+    <Content Include="flags\modern\mr-IN.png" />
+    <Content Include="flags\modern\ms-BN.png" />
+    <Content Include="flags\modern\ms-MY.png" />
+    <Content Include="flags\modern\mt-MT.png" />
+    <Content Include="flags\modern\nb-NO.png" />
+    <Content Include="flags\modern\ne-NP.png" />
+    <Content Include="flags\modern\nl-BE.png" />
+    <Content Include="flags\modern\nl-NL.png" />
+    <Content Include="flags\modern\nn-NO.png" />
+    <Content Include="flags\modern\nso-ZA.png" />
+    <Content Include="flags\modern\oc-FR.png" />
+    <Content Include="flags\modern\or-IN.png" />
+    <Content Include="flags\modern\pa-IN.png" />
+    <Content Include="flags\modern\pl-PL.png" />
+    <Content Include="flags\modern\prs-AF.png" />
+    <Content Include="flags\modern\ps-AF.png" />
+    <Content Include="flags\modern\pt-BR.png" />
+    <Content Include="flags\modern\pt-PT.png" />
+    <Content Include="flags\modern\qut-GT.png" />
+    <Content Include="flags\modern\quz-BO.png" />
+    <Content Include="flags\modern\quz-EC.png" />
+    <Content Include="flags\modern\quz-PE.png" />
+    <Content Include="flags\modern\rm-CH.png" />
+    <Content Include="flags\modern\ro-RO.png" />
+    <Content Include="flags\modern\ru-RU.png" />
+    <Content Include="flags\modern\rw-RW.png" />
+    <Content Include="flags\modern\sa-IN.png" />
+    <Content Include="flags\modern\sah-RU.png" />
+    <Content Include="flags\modern\se-FI.png" />
+    <Content Include="flags\modern\se-NO.png" />
+    <Content Include="flags\modern\se-SE.png" />
+    <Content Include="flags\modern\si-LK.png" />
+    <Content Include="flags\modern\sk-SK.png" />
+    <Content Include="flags\modern\sl-SI.png" />
+    <Content Include="flags\modern\sma-NO.png" />
+    <Content Include="flags\modern\sma-SE.png" />
+    <Content Include="flags\modern\smj-NO.png" />
+    <Content Include="flags\modern\smj-SE.png" />
+    <Content Include="flags\modern\smn-FI.png" />
+    <Content Include="flags\modern\sms-FI.png" />
+    <Content Include="flags\modern\sq-AL.png" />
+    <Content Include="flags\modern\sr-Cyrl-BA.png" />
+    <Content Include="flags\modern\sr-Cyrl-RS.png" />
+    <Content Include="flags\modern\sr-Latn-BA.png" />
+    <Content Include="flags\modern\sr-Latn-RS.png" />
+    <Content Include="flags\modern\sv-FI.png" />
+    <Content Include="flags\modern\sv-SE.png" />
+    <Content Include="flags\modern\sw-KE.png" />
+    <Content Include="flags\modern\syr-SY.png" />
+    <Content Include="flags\modern\ta-IN.png" />
+    <Content Include="flags\modern\te-IN.png" />
+    <Content Include="flags\modern\tg-Cyrl-TJ.png" />
+    <Content Include="flags\modern\th-TH.png" />
+    <Content Include="flags\modern\tk-TM.png" />
+    <Content Include="flags\modern\tn-ZA.png" />
+    <Content Include="flags\modern\tr-TR.png" />
+    <Content Include="flags\modern\tt-RU.png" />
+    <Content Include="flags\modern\tzm-Latn-DZ.png" />
+    <Content Include="flags\modern\ug-CN.png" />
+    <Content Include="flags\modern\uk-UA.png" />
+    <Content Include="flags\modern\ur-PK.png" />
+    <Content Include="flags\modern\uz-Cyrl-UZ.png" />
+    <Content Include="flags\modern\uz-Latn-UZ.png" />
+    <Content Include="flags\modern\vi-VN.png" />
+    <Content Include="flags\modern\wo-SN.png" />
+    <Content Include="flags\modern\xh-ZA.png" />
+    <Content Include="flags\modern\yo-NG.png" />
+    <Content Include="flags\modern\zh-CN.png" />
+    <Content Include="flags\modern\zh-HK.png" />
+    <Content Include="flags\modern\zh-MO.png" />
+    <Content Include="flags\modern\zh-SG.png" />
+    <Content Include="flags\modern\zh-TW.png" />
+    <Content Include="flags\modern\zu-ZA.png" />
+    <Content Include="images\LOGO2005_en.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildProjectDirectory)\MSBuild\Project.targets" Condition="Exists('$(MSBuildProjectDirectory)\MSBuild\Project.targets') AND Exists('$(MSBuildProjectDirectory)\_Dependencies\MSBuild\MSBuild.Community.Tasks.Targets')" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+</Project>
