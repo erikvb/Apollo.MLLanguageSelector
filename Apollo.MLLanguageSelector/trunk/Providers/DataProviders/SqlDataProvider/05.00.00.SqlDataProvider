@@ -16,6 +16,7 @@ GO
 			UPDATE {databaseOwner}[{objectQualifier}Packages] 
 			SET Version = N'5.0.0',
 			    License = N'See for complete license text: http://mllanguageselector.codeplex.com/license'
+			WHERE PackageId = @PackageId
 		END
 		ELSE 
 		BEGIN
