@@ -93,7 +93,9 @@
         <!-- get files for resource zip-->
         <CreateItem	Include="$(MSBuildProjectDirectory)\**"
                     	Exclude="$(MSBuildProjectDirectory)\**\.svn\**;
-                        $(MSBuildProjectDirectory)\_**\**;
+            $(MSBuildProjectDirectory)\_Instalation\**;
+            $(MSBuildProjectDirectory)\_Dependencies\**;
+            $(MSBuildProjectDirectory)\_ReSharper.$(CompanyName).$(ModuleName)\**;
 						$(MSBuildProjectDirectory)\**\obj\**;
 						$(MSBuildProjectDirectory)\**\bin\**;
 						$(MSBuildProjectDirectory)\**\*.user;
@@ -131,15 +133,7 @@
         <Delete Files="$(MSBuildProjectDirectory)\resources.zip"></Delete>
 
         <!-- get files for resource zip-->
-        <CreateItem Exclude="$(MSBuildProjectDirectory)\**\.svn\**;
-                        $(MSBuildProjectDirectory)\_**\**;
-						$(MSBuildProjectDirectory)\**\obj\**;
-						$(MSBuildProjectDirectory)\**\bin\**;
-						$(MSBuildProjectDirectory)\**\My Project\**;
-						$(MSBuildProjectDirectory)\Dependencies\**;
-						$(MSBuildProjectDirectory)\**\Properties\**;
-						$(MSBuildProjectDirectory)\*.dnn*;
-						$(MSBuildProjectDirectory)\**\msbuild\**"
+        <CreateItem 
 					Include="$(MSBuildProjectDirectory)\**\*.ascx;
 						$(MSBuildProjectDirectory)\**\*.aspx;
 						$(MSBuildProjectDirectory)\**\*.ashx;
@@ -154,6 +148,15 @@
 						$(MSBuildProjectDirectory)\**\*.png;
 						$(MSBuildProjectDirectory)\Documentation\*.txt;
 						$(MSBuildProjectDirectory)\Documentation\*.htm;"
+          Exclude="$(MSBuildProjectDirectory)\**\.svn\**;
+            $(MSBuildProjectDirectory)\_Installation\**;
+            $(MSBuildProjectDirectory)\_ReSharper.$(CompanyName).$(ModuleName)\**;
+						$(MSBuildProjectDirectory)\**\obj\**;
+						$(MSBuildProjectDirectory)\**\bin\**;
+						$(MSBuildProjectDirectory)\**\My Project\**;
+						$(MSBuildProjectDirectory)\**\Properties\**;
+						$(MSBuildProjectDirectory)\*.dnn*;
+						$(MSBuildProjectDirectory)\**\msbuild\**"
 					>
             <Output TaskParameter="Include" ItemName="resources" />
         </CreateItem>
